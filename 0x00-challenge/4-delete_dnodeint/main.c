@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * main - Checks the code
+ * main - check the code for Holberton School students.
  *
- * Return: EXIT_SUCCESS
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
