@@ -3,7 +3,6 @@
 """
 import sys
 
-
 def fizzbuzz(n):
     """
     FizzBuzz function prints numbers from 1 to n separated by a space.
@@ -15,18 +14,17 @@ def fizzbuzz(n):
     if n < 1:
         return
 
-    tmp_result = []
+    result = []
     for i in range(1, n + 1):
         if (i % 3) == 0 and (i % 5) == 0:
-            tmp_result.append("FizzBuzz")
+            result.append("FizzBuzz")
         elif (i % 3) == 0:
-            tmp_result.append("Fizz")
+            result.append("Fizz")
         elif (i % 5) == 0:
-            tmp_result.append("Buzz")
+            result.append("Buzz")
         else:
-            tmp_result.append(str(i))
-    print(" ".join(tmp_result))
-
+            result.append(str(i))
+    print(" ".join(result))
 
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
