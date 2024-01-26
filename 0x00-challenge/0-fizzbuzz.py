@@ -35,10 +35,5 @@ if __name__ == '__main__':
         print("Example: ./0-fizzbuzz.py 89")
         sys.exit(1)
 
-    try:
-        number = int(sys.argv[1])
-    except ValueError as e:
-        print(f"Invalid argument: {e}")
-        sys.exit(1)
-
+    number = int(sys.argv[1])
     fizzbuzz(number)
